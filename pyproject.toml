@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cite-paper"
+version = "0.1.0"
+description = "A verifiable deep-research agent for computer science papers."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.116,<1",
+]
+
+[project.optional-dependencies]
+agent = [
+    "langgraph>=1,<2",
+]
+observability = [
+    "mlflow>=3,<4",
+]
+dev = [
+    "pytest>=8,<10",
+    "ruff>=0.12,<1",
+]
+
+[project.scripts]
+cite-paper = "cite_paper.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cite_paper"]
+
+[tool.fastapi]
+entrypoint = "cite_paper.api:app"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
