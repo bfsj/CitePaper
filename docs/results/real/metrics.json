@@ -1,0 +1,764 @@
+{
+  "label": "four-real-papers-manual-regression",
+  "created_unix": 1792675081.419421,
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "langgraph": "1.2.16",
+  "budget_units": 400,
+  "case_count": 12,
+  "repeats": 5,
+  "documents": [
+    {
+      "id": "40a3010d803a464bdafd18bf",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "hash": "63a904e2b895199c849eccc415f9b563a2798e7768ca20f848fce3fe8f98b8d2"
+    },
+    {
+      "id": "765b597809dcb17f759f3861",
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "hash": "1ba61437ef04d184687999d028ed022a5886aca3c64a6b5cc82a223ee9e5de08"
+    },
+    {
+      "id": "df5ea06c99455be5b69adea1",
+      "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+      "hash": "0fa68ebb26abdc7439ec2b4ba70de192e495ac97acadfba0b402828138a036a6"
+    },
+    {
+      "id": "d50f9fb4f856a5d75e06fa69",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "hash": "90a7c9f428d9d53a6da0b1fe724de30a9d4dd3390b2c37d1c6c6ff34778e382d"
+    }
+  ],
+  "results": [
+    {
+      "strategy": "topk",
+      "auto_context": true,
+      "full_span_recall": 0.8333333333333334,
+      "mean_span_coverage": 0.8333333333333334,
+      "mean_units": 397,
+      "p50_ms": 62.5795999658294,
+      "p95_ms": 73.40590003877878,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "RAG non parametric memory Wikipedia index retriever",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 399,
+          "source_spans_valid": true,
+          "latency_ms": [
+            55.8671000180766,
+            72.22830003593117,
+            63.4493000106886,
+            62.6052999868989,
+            63.19779995828867
+          ]
+        },
+        {
+          "query": "RAG generator BART model parameter count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 399,
+          "source_spans_valid": true,
+          "latency_ms": [
+            64.54140006098896,
+            53.054000018164515,
+            57.06709995865822,
+            64.80890000239015,
+            55.25370000395924
+          ]
+        },
+        {
+          "query": "RAG Wikipedia corpus chunks document count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            61.53589999303222,
+            58.038400020450354,
+            57.211300008930266,
+            58.52339998818934,
+            71.37449993751943
+          ]
+        },
+        {
+          "query": "Self RAG reflection tokens adaptive retrieval mechanism",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            63.24039993342012,
+            61.714100069366395,
+            73.27140006236732,
+            59.50760003179312,
+            69.78340004570782
+          ]
+        },
+        {
+          "query": "Self RAG offline critic training overhead",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            57.68279999028891,
+            55.61490007676184,
+            51.554600009694695,
+            45.28119997121394,
+            59.97639999259263
+          ]
+        },
+        {
+          "query": "Self RAG inference when retrieval not required",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            50.83790002390742,
+            62.674099928699434,
+            53.132500033825636,
+            63.38469998445362,
+            62.553899944759905
+          ]
+        },
+        {
+          "query": "HyDE hypothetical document encoder Contriever",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 396,
+          "source_spans_valid": true,
+          "latency_ms": [
+            55.5947000393644,
+            62.48140009120107,
+            63.72399989049882,
+            68.08410002849996,
+            66.68030004948378
+          ]
+        },
+        {
+          "query": "HyDE generated document hallucination limitation",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            51.52780003845692,
+            64.34479996096343,
+            64.83940000180155,
+            52.63569997623563,
+            59.56800002604723
+          ]
+        },
+        {
+          "query": "HyDE InstructGPT sampling temperature experiment setting",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 370,
+          "source_spans_valid": true,
+          "latency_ms": [
+            62.689200043678284,
+            58.37670003529638,
+            46.89289990346879,
+            60.01800007652491,
+            51.407699938863516
+          ]
+        },
+        {
+          "query": "Lost in Middle performance relevant information location",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            52.36169998534024,
+            56.33940000552684,
+            63.65869997534901,
+            64.66270005330443,
+            72.80839991290122
+          ]
+        },
+        {
+          "query": "Lost in Middle key value retrieval task input format",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            74.29150003008544,
+            73.88449995778501,
+            73.40590003877878,
+            73.09710001572967,
+            66.99300010222942
+          ]
+        },
+        {
+          "query": "Lost in Middle document order experiment position",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            70.53800008725375,
+            65.56100002489984,
+            66.58700003754348,
+            61.88619998283684,
+            71.84240000788122
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "neighbors",
+      "auto_context": true,
+      "full_span_recall": 0.75,
+      "mean_span_coverage": 0.75,
+      "mean_units": 396.75,
+      "p50_ms": 64.58584999199957,
+      "p95_ms": 86.32000000216067,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "RAG non parametric memory Wikipedia index retriever",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            71.21949992142618,
+            79.06720007304102,
+            69.99429990537465,
+            78.28890008386225,
+            73.81540001370013
+          ]
+        },
+        {
+          "query": "RAG generator BART model parameter count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 399,
+          "source_spans_valid": true,
+          "latency_ms": [
+            57.516500004567206,
+            76.37330004945397,
+            60.46799989417195,
+            71.9271000707522,
+            71.54899998567998
+          ]
+        },
+        {
+          "query": "RAG Wikipedia corpus chunks document count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            67.18959996942431,
+            63.93840000964701,
+            62.247300054877996,
+            77.701999922283,
+            72.02900003176183
+          ]
+        },
+        {
+          "query": "Self RAG reflection tokens adaptive retrieval mechanism",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            82.57279999088496,
+            72.08939990960062,
+            82.00330007821321,
+            87.46150007937104,
+            86.32000000216067
+          ]
+        },
+        {
+          "query": "Self RAG offline critic training overhead",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            72.87229993380606,
+            63.35740000940859,
+            52.080600056797266,
+            44.69720006454736,
+            71.16459996905178
+          ]
+        },
+        {
+          "query": "Self RAG inference when retrieval not required",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            89.35149991884828,
+            58.09140007477254,
+            58.666200027801096,
+            84.05519998632371,
+            76.67890004813671
+          ]
+        },
+        {
+          "query": "HyDE hypothetical document encoder Contriever",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 393,
+          "source_spans_valid": true,
+          "latency_ms": [
+            59.06379991210997,
+            55.94710004515946,
+            47.97860002145171,
+            55.40479999035597,
+            59.719600016251206
+          ]
+        },
+        {
+          "query": "HyDE generated document hallucination limitation",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            62.726300093345344,
+            48.589799902401865,
+            52.35750006977469,
+            55.02979992888868,
+            62.62710003647953
+          ]
+        },
+        {
+          "query": "HyDE InstructGPT sampling temperature experiment setting",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 378,
+          "source_spans_valid": true,
+          "latency_ms": [
+            49.215300008654594,
+            50.92880001757294,
+            53.46850003115833,
+            55.789300007745624,
+            56.65659997612238
+          ]
+        },
+        {
+          "query": "Lost in Middle performance relevant information location",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 395,
+          "source_spans_valid": true,
+          "latency_ms": [
+            67.11419997736812,
+            60.17850001808256,
+            65.29149995185435,
+            62.471000012010336,
+            60.552499955520034
+          ]
+        },
+        {
+          "query": "Lost in Middle key value retrieval task input format",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            82.23569998517632,
+            78.59339995775372,
+            84.15390003938228,
+            85.82189993467182,
+            79.27300001028925
+          ]
+        },
+        {
+          "query": "Lost in Middle document order experiment position",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 396,
+          "source_spans_valid": true,
+          "latency_ms": [
+            60.638300026766956,
+            66.07019994407892,
+            57.81200004275888,
+            52.67660005483776,
+            65.23329997435212
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "rse",
+      "auto_context": true,
+      "full_span_recall": 0.5833333333333334,
+      "mean_span_coverage": 0.5833333333333334,
+      "mean_units": 396.75,
+      "p50_ms": 99.93939998093992,
+      "p95_ms": 120.11749995872378,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "RAG non parametric memory Wikipedia index retriever",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            122.74430005345494,
+            107.93649998959154,
+            87.67689997330308,
+            84.61789996363223,
+            99.48219999205321
+          ]
+        },
+        {
+          "query": "RAG generator BART model parameter count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 398,
+          "source_spans_valid": true,
+          "latency_ms": [
+            101.52280004695058,
+            93.19439996033907,
+            88.90530001372099,
+            96.54940001200885,
+            113.33660001400858
+          ]
+        },
+        {
+          "query": "RAG Wikipedia corpus chunks document count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            91.85189998243004,
+            86.58899995498359,
+            79.6381999971345,
+            113.49430005066097,
+            120.11749995872378
+          ]
+        },
+        {
+          "query": "Self RAG reflection tokens adaptive retrieval mechanism",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 398,
+          "source_spans_valid": true,
+          "latency_ms": [
+            120.0061000417918,
+            96.20109992101789,
+            105.67469999659806,
+            100.90920003131032,
+            93.29590003471822
+          ]
+        },
+        {
+          "query": "Self RAG offline critic training overhead",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 399,
+          "source_spans_valid": true,
+          "latency_ms": [
+            88.164999964647,
+            89.09629995469004,
+            106.01190000306815,
+            96.33390000090003,
+            94.49170005973428
+          ]
+        },
+        {
+          "query": "Self RAG inference when retrieval not required",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            102.35039994586259,
+            101.57130006700754,
+            91.9329000171274,
+            89.5383000606671,
+            97.70259994547814
+          ]
+        },
+        {
+          "query": "HyDE hypothetical document encoder Contriever",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            86.08269994147122,
+            89.41030001733452,
+            86.16499998606741,
+            110.12079997453839,
+            103.78110001329333
+          ]
+        },
+        {
+          "query": "HyDE generated document hallucination limitation",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            92.0146000571549,
+            89.50510004069656,
+            105.6349000427872,
+            105.91579996980727,
+            75.99059992935508
+          ]
+        },
+        {
+          "query": "HyDE InstructGPT sampling temperature experiment setting",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 370,
+          "source_spans_valid": true,
+          "latency_ms": [
+            84.47070000693202,
+            88.34330004174262,
+            94.89599999506027,
+            121.54359999112785,
+            104.79829995892942
+          ]
+        },
+        {
+          "query": "Lost in Middle performance relevant information location",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            104.51679991092533,
+            94.39740004017949,
+            100.39659996982664,
+            115.24850002024323,
+            116.86820001341403
+          ]
+        },
+        {
+          "query": "Lost in Middle key value retrieval task input format",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            106.07049998361617,
+            116.96050001773983,
+            109.58149994257838,
+            119.05879992991686,
+            102.10030002053827
+          ]
+        },
+        {
+          "query": "Lost in Middle document order experiment position",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 396,
+          "source_spans_valid": true,
+          "latency_ms": [
+            89.23969999887049,
+            101.53590003028512,
+            96.01640002802014,
+            106.26899998169392,
+            118.6075999867171
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "rse",
+      "auto_context": false,
+      "full_span_recall": 0.75,
+      "mean_span_coverage": 0.75,
+      "mean_units": 395.5,
+      "p50_ms": 96.81154997088015,
+      "p95_ms": 115.79449998680502,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "RAG non parametric memory Wikipedia index retriever",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            101.85039998032153,
+            93.55680004227906,
+            84.9752000067383,
+            93.7843999126926,
+            102.61900001205504
+          ]
+        },
+        {
+          "query": "RAG generator BART model parameter count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            98.19419996347278,
+            109.98379997909069,
+            96.50109999347478,
+            115.79449998680502,
+            109.85510004684329
+          ]
+        },
+        {
+          "query": "RAG Wikipedia corpus chunks document count",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            104.58629997447133,
+            113.57980000320822,
+            117.92530003003776,
+            105.28260003775358,
+            84.55870009493083
+          ]
+        },
+        {
+          "query": "Self RAG reflection tokens adaptive retrieval mechanism",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 386,
+          "source_spans_valid": true,
+          "latency_ms": [
+            97.33869996853173,
+            87.18119992408901,
+            84.61440005339682,
+            92.76449994649738,
+            98.21369999554008
+          ]
+        },
+        {
+          "query": "Self RAG offline critic training overhead",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            93.31400005612522,
+            92.77380001731217,
+            95.80489993095398,
+            99.91730004549026,
+            93.47369999159127
+          ]
+        },
+        {
+          "query": "Self RAG inference when retrieval not required",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            105.33789999317378,
+            112.39819996990263,
+            117.48930008616298,
+            109.67529995832592,
+            88.5298999492079
+          ]
+        },
+        {
+          "query": "HyDE hypothetical document encoder Contriever",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            80.17040009144694,
+            101.20100004132837,
+            77.40730000659823,
+            82.71750004496425,
+            75.15329995658249
+          ]
+        },
+        {
+          "query": "HyDE generated document hallucination limitation",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            92.32390008401126,
+            89.67340004164726,
+            97.12199994828552,
+            70.2899000607431,
+            88.6434999993071
+          ]
+        },
+        {
+          "query": "HyDE InstructGPT sampling temperature experiment setting",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 370,
+          "source_spans_valid": true,
+          "latency_ms": [
+            93.90949993394315,
+            113.7261000694707,
+            84.77319998200983,
+            95.3924999339506,
+            94.11469998303801
+          ]
+        },
+        {
+          "query": "Lost in Middle performance relevant information location",
+          "full_span_hit": false,
+          "gold_span_coverage": 0.0,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            102.1894000004977,
+            111.73629993572831,
+            98.25569996610284,
+            110.2708000689745,
+            97.90300007443875
+          ]
+        },
+        {
+          "query": "Lost in Middle key value retrieval task input format",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 390,
+          "source_spans_valid": true,
+          "latency_ms": [
+            97.65699994750321,
+            90.49820003565401,
+            84.74969991948456,
+            88.36280007380992,
+            90.37269989494234
+          ]
+        },
+        {
+          "query": "Lost in Middle document order experiment position",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 400,
+          "source_spans_valid": true,
+          "latency_ms": [
+            106.54029995203018,
+            109.3758000060916,
+            78.99609999731183,
+            101.50709992740303,
+            108.77910000272095
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Small manually selected retrieval regression, not an unbiased benchmark.",
+    "Budget units are not model tokenizer tokens.",
+    "No LLM answer quality or semantic entailment measured.",
+    "RSE is not guaranteed to beat simpler baselines."
+  ]
+}

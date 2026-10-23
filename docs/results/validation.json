@@ -1,0 +1,29 @@
+{
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "test_count": 72,
+  "failures_or_errors": 0,
+  "statement_coverage_percent": 90.75098814229248,
+  "covered_statements": 1148,
+  "total_statements": 1265,
+  "packages": {
+    "cite-paper": "0.2.0",
+    "langgraph": "1.2.16",
+    "langchain-core": "1.6.13",
+    "fastapi": "0.159.1",
+    "httpx": "0.28.1",
+    "pypdf": "6.21.2",
+    "pytest": "9.1.1",
+    "pytest-cov": "7.1.0",
+    "ruff": "0.17.1",
+    "torch": "2.14.1+cpu",
+    "transformers": "4.57.6"
+  },
+  "not_verified": [
+    "Linux runtime",
+    "Docker build / Compose",
+    "GitHub Actions run",
+    "Production deployment",
+    "Automatic semantic entailment"
+  ]
+}

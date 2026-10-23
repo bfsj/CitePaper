@@ -1,0 +1,124 @@
+{
+  "topic": "retrieval evidence budget and limitations",
+  "claims": [
+    {
+      "text": "# Method\nAtlas uses continuous evidence segments for retrieval. The retriever ranks individual chunks with BM25 before expanding adjacent chunks. The next paragraph contains the budget constraint, not a separate method.\n\nExpansion stops at the document boundary. Context is limited to 240 retrieval units. Source quotations are copied from the original page without adding generated context.",
+      "category": "other",
+      "citations": [
+        "Ec0a1125936ab"
+      ]
+    },
+    {
+      "text": "# Experiments\nThis is a fictional test document, not a published experiment. Atlas is tested on twelve synthetic questions with a fixed context budget. The evaluation compares isolated chunks, fixed neighbors, and continuous segments.",
+      "category": "other",
+      "citations": [
+        "Ef94a801ab094"
+      ]
+    },
+    {
+      "text": "# Limitations\nAtlas has no OCR support. Its parser may reorder two-column PDF text. It does not verify semantic entailment of generated claims.",
+      "category": "other",
+      "citations": [
+        "Eb75b61674bbb"
+      ]
+    },
+    {
+      "text": "# Method\nCedar links claims to immutable source snapshots using evidence identifiers. Each evidence record includes the paper hash, page number, and character offsets. The verifier reconstructs the quoted span from the stored page text.\n\nAn exact quote match verifies provenance, not whether the claim follows from it. Semantic entailment is not evaluated automatically in this fictional study.",
+      "category": "other",
+      "citations": [
+        "E145e4d833020"
+      ]
+    }
+  ],
+  "gaps": [
+    "Extractive mode: excerpts only; no model-written comparative analysis."
+  ],
+  "evidence": [
+    {
+      "id": "Ec0a1125936ab",
+      "document_id": "7f16d121d18ad0e942902647",
+      "document_hash": "79220a3e7127afe99add33893a12751f3a13f452cb312175041b3ea8ac55fbbd",
+      "title": "SYNTHETIC Atlas retrieval study",
+      "source": "synthetic://citepaper-fixture",
+      "page": 1,
+      "section": "Method",
+      "start": 0,
+      "end": 391,
+      "quote": "# Method\nAtlas uses continuous evidence segments for retrieval. The retriever ranks individual chunks with BM25 before expanding adjacent chunks. The next paragraph contains the budget constraint, not a separate method.\n\nExpansion stops at the document boundary. Context is limited to 240 retrieval units. Source quotations are copied from the original page without adding generated context.",
+      "score": 0.82,
+      "chunk_ids": [
+        "c0a1125936abfa945d363be2"
+      ]
+    },
+    {
+      "id": "Ef94a801ab094",
+      "document_id": "7f16d121d18ad0e942902647",
+      "document_hash": "79220a3e7127afe99add33893a12751f3a13f452cb312175041b3ea8ac55fbbd",
+      "title": "SYNTHETIC Atlas retrieval study",
+      "source": "synthetic://citepaper-fixture",
+      "page": 2,
+      "section": "Experiments",
+      "start": 0,
+      "end": 234,
+      "quote": "# Experiments\nThis is a fictional test document, not a published experiment. Atlas is tested on twelve synthetic questions with a fixed context budget. The evaluation compares isolated chunks, fixed neighbors, and continuous segments.",
+      "score": 0.484237,
+      "chunk_ids": [
+        "f94a801ab0948e77080aab10"
+      ]
+    },
+    {
+      "id": "Eb75b61674bbb",
+      "document_id": "7f16d121d18ad0e942902647",
+      "document_hash": "79220a3e7127afe99add33893a12751f3a13f452cb312175041b3ea8ac55fbbd",
+      "title": "SYNTHETIC Atlas retrieval study",
+      "source": "synthetic://citepaper-fixture",
+      "page": 2,
+      "section": "Limitations",
+      "start": 235,
+      "end": 378,
+      "quote": "# Limitations\nAtlas has no OCR support. Its parser may reorder two-column PDF text. It does not verify semantic entailment of generated claims.",
+      "score": 0.483131,
+      "chunk_ids": [
+        "b75b61674bbbe9940184ee03"
+      ]
+    },
+    {
+      "id": "E145e4d833020",
+      "document_id": "5a1951905b54e7b1a4060c1e",
+      "document_hash": "c8f37cb07f128acf2b3f98ea86bfd8f2b87880ed26b843041769202a2412f353",
+      "title": "SYNTHETIC Cedar citation study",
+      "source": "synthetic://citepaper-fixture",
+      "page": 1,
+      "section": "Method",
+      "start": 0,
+      "end": 394,
+      "quote": "# Method\nCedar links claims to immutable source snapshots using evidence identifiers. Each evidence record includes the paper hash, page number, and character offsets. The verifier reconstructs the quoted span from the stored page text.\n\nAn exact quote match verifies provenance, not whether the claim follows from it. Semantic entailment is not evaluated automatically in this fictional study.",
+      "score": 0.262078,
+      "chunk_ids": [
+        "145e4d833020c13712b3ef91"
+      ]
+    }
+  ],
+  "verification": {
+    "source_spans_valid": true,
+    "invalid_evidence": [],
+    "citation_links_valid": true,
+    "problems": [],
+    "semantic_entailment": "not_evaluated",
+    "needs_review": false
+  },
+  "warnings": [],
+  "mode": "extractive",
+  "retrieval_units": 197,
+  "budget": 600,
+  "usage": [],
+  "timings_ms": {
+    "plan": 0.007,
+    "discover": 1.489,
+    "retrieve": 5.503,
+    "write": 0.01,
+    "verify": 1.418,
+    "report": 0.197
+  },
+  "markdown": "# CitePaper research report\n\n```text\nretrieval evidence budget and limitations\n```\n\nMode: extractive (no LLM).\nCitation checks validate source spans, NOT semantic truth. Human review required.\n\n## Observation 1 (other)\n\n```text\n# Method\nAtlas uses continuous evidence segments for retrieval. The retriever ranks individual chunks with BM25 before expanding adjacent chunks. The next paragraph contains the budget constraint, not a separate method.\n\nExpansion stops at the document boundary. Context is limited to 240 retrieval units. Source quotations are copied from the original page without adding generated context.\n```\n\nEvidence: Ec0a1125936ab\n\n## Observation 2 (other)\n\n```text\n# Experiments\nThis is a fictional test document, not a published experiment. Atlas is tested on twelve synthetic questions with a fixed context budget. The evaluation compares isolated chunks, fixed neighbors, and continuous segments.\n```\n\nEvidence: Ef94a801ab094\n\n## Observation 3 (other)\n\n```text\n# Limitations\nAtlas has no OCR support. Its parser may reorder two-column PDF text. It does not verify semantic entailment of generated claims.\n```\n\nEvidence: Eb75b61674bbb\n\n## Observation 4 (other)\n\n```text\n# Method\nCedar links claims to immutable source snapshots using evidence identifiers. Each evidence record includes the paper hash, page number, and character offsets. The verifier reconstructs the quoted span from the stored page text.\n\nAn exact quote match verifies provenance, not whether the claim follows from it. Semantic entailment is not evaluated automatically in this fictional study.\n```\n\nEvidence: E145e4d833020\n\n## Evidence ledger\n\n### Ec0a1125936ab | page 1 | chars 0:391\n\n```text\n{\n  \"title\": \"SYNTHETIC Atlas retrieval study\",\n  \"source\": \"synthetic://citepaper-fixture\",\n  \"section\": \"Method\",\n  \"document_hash\": \"79220a3e7127afe99add33893a12751f3a13f452cb312175041b3ea8ac55fbbd\",\n  \"quote\": \"# Method\\nAtlas uses continuous evidence segments for retrieval. The retriever ranks individual chunks with BM25 before expanding adjacent chunks. The next paragraph contains the budget constraint, not a separate method.\\n\\nExpansion stops at the document boundary. Context is limited to 240 retrieval units. Source quotations are copied from the original page without adding generated context.\"\n}\n```\n\n### Ef94a801ab094 | page 2 | chars 0:234\n\n```text\n{\n  \"title\": \"SYNTHETIC Atlas retrieval study\",\n  \"source\": \"synthetic://citepaper-fixture\",\n  \"section\": \"Experiments\",\n  \"document_hash\": \"79220a3e7127afe99add33893a12751f3a13f452cb312175041b3ea8ac55fbbd\",\n  \"quote\": \"# Experiments\\nThis is a fictional test document, not a published experiment. Atlas is tested on twelve synthetic questions with a fixed context budget. The evaluation compares isolated chunks, fixed neighbors, and continuous segments.\"\n}\n```\n\n### Eb75b61674bbb | page 2 | chars 235:378\n\n```text\n{\n  \"title\": \"SYNTHETIC Atlas retrieval study\",\n  \"source\": \"synthetic://citepaper-fixture\",\n  \"section\": \"Limitations\",\n  \"document_hash\": \"79220a3e7127afe99add33893a12751f3a13f452cb312175041b3ea8ac55fbbd\",\n  \"quote\": \"# Limitations\\nAtlas has no OCR support. Its parser may reorder two-column PDF text. It does not verify semantic entailment of generated claims.\"\n}\n```\n\n### E145e4d833020 | page 1 | chars 0:394\n\n```text\n{\n  \"title\": \"SYNTHETIC Cedar citation study\",\n  \"source\": \"synthetic://citepaper-fixture\",\n  \"section\": \"Method\",\n  \"document_hash\": \"c8f37cb07f128acf2b3f98ea86bfd8f2b87880ed26b843041769202a2412f353\",\n  \"quote\": \"# Method\\nCedar links claims to immutable source snapshots using evidence identifiers. Each evidence record includes the paper hash, page number, and character offsets. The verifier reconstructs the quoted span from the stored page text.\\n\\nAn exact quote match verifies provenance, not whether the claim follows from it. Semantic entailment is not evaluated automatically in this fictional study.\"\n}\n```\n\n## Evidence gaps\n\n```text\nExtractive mode: excerpts only; no model-written comparative analysis.\n```\n\n## Verification\n\n```text\n{\n  \"source_spans_valid\": true,\n  \"invalid_evidence\": [],\n  \"citation_links_valid\": true,\n  \"problems\": [],\n  \"semantic_entailment\": \"not_evaluated\",\n  \"needs_review\": false\n}\n```"
+}

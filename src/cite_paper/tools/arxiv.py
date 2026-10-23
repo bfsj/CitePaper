@@ -21,10 +21,13 @@ class ArxivError(RuntimeError):
 
 
 def _clean_text(value: str | None) -> str:
+    """Normalize whitespace in a string and return an empty string for None."""
     return " ".join((value or "").split())
 
 
 def _required_text(entry: ElementTree.Element, field: str) -> str:
+    """Extract a required text field from an arXiv Atom entry."""
+
     value = _clean_text(entry.findtext(f"atom:{field}", namespaces=NAMESPACES))
     if not value:
         raise ArxivError(f"arXiv entry is missing required field: {field}")
@@ -32,6 +35,8 @@ def _required_text(entry: ElementTree.Element, field: str) -> str:
 
 
 def _extract_arxiv_id(abstract_url: str) -> str:
+    """Extract the arXiv ID from an abstract URL."""
+
     marker = "/abs/"
     if marker not in abstract_url:
         raise ArxivError(f"Unexpected arXiv abstract URL: {abstract_url}")
@@ -84,6 +89,8 @@ def parse_atom_feed(payload: bytes | str) -> list[Paper]:
 
 
 def _default_fetcher(request: Request, timeout: float) -> bytes:
+    """Fetch the response for a request using urllib."""
+
     try:
         with urlopen(request, timeout=timeout) as response:  # noqa: S310
             return response.read()

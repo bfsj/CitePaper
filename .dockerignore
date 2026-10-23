@@ -1,0 +1,13 @@
+.git
+.venv
+.env
+.citepaper
+tmp
+output
+__pycache__
+.pytest_cache
+.ruff_cache
+local-notes
+.local-notes
+docs/LEARNING_GUIDE.md
+docs/RESUME.md

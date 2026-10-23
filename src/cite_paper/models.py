@@ -19,3 +19,17 @@ class Paper:
 
     def to_dict(self) -> dict[str, object]:
         return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict[str, object]) -> Paper:
+        return cls(
+            arxiv_id=data["arxiv_id"],
+            title=data["title"],
+            authors=tuple(data["authors"]),
+            abstract=data["abstract"],
+            published=data["published"],
+            updated=data["updated"],
+            categories=tuple(data["categories"]),
+            abstract_url=data["abstract_url"],
+            pdf_url=data.get("pdf_url"),
+        )

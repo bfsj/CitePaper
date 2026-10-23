@@ -1,0 +1,759 @@
+{
+  "label": "synthetic-regression",
+  "created_unix": 1792675083.5935025,
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "langgraph": "1.2.16",
+  "budget_units": 240,
+  "case_count": 12,
+  "repeats": 5,
+  "documents": [
+    {
+      "id": "7f16d121d18ad0e942902647",
+      "title": "SYNTHETIC Atlas retrieval study",
+      "hash": "79220a3e7127afe99add33893a12751f3a13f452cb312175041b3ea8ac55fbbd"
+    },
+    {
+      "id": "52913bf26c8c32e314db59a8",
+      "title": "SYNTHETIC Boreal durable worker study",
+      "hash": "e8d79ea25eb74d3f7320659dd52ff066156490813d2a02050cb7ba381bbe363b"
+    },
+    {
+      "id": "5a1951905b54e7b1a4060c1e",
+      "title": "SYNTHETIC Cedar citation study",
+      "hash": "c8f37cb07f128acf2b3f98ea86bfd8f2b87880ed26b843041769202a2412f353"
+    }
+  ],
+  "results": [
+    {
+      "strategy": "topk",
+      "auto_context": true,
+      "full_span_recall": 1.0,
+      "mean_span_coverage": 1,
+      "mean_units": 144.25,
+      "p50_ms": 4.023799963761121,
+      "p95_ms": 4.835700034163892,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "Atlas retrieval budget constraint",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            5.9396999422460794,
+            3.9857999654486775,
+            4.204500000923872,
+            4.251600010320544,
+            4.010200034826994
+          ]
+        },
+        {
+          "query": "Atlas source quotations generated context",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 197,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.8597999373450875,
+            4.1831000708043575,
+            3.985299961641431,
+            3.662100061774254,
+            3.6461000563576818
+          ]
+        },
+        {
+          "query": "Atlas parser OCR limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 199,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.588300012983382,
+            4.723599995486438,
+            3.8463000673800707,
+            4.115799907594919,
+            4.2316000908613205
+          ]
+        },
+        {
+          "query": "Atlas evaluation comparisons",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.026499926112592,
+            3.8386000087484717,
+            4.009700031019747,
+            4.488699953071773,
+            4.353600088506937
+          ]
+        },
+        {
+          "query": "Boreal worker claims lease token",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 211,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.090499947778881,
+            4.015900078229606,
+            5.107600009068847,
+            3.9805000415071845,
+            4.175000009126961
+          ]
+        },
+        {
+          "query": "Boreal crash recovery unfinished work",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.790999995544553,
+            4.4507000129669905,
+            3.7167000118643045,
+            4.081699997186661,
+            3.9775000186637044
+          ]
+        },
+        {
+          "query": "Boreal exactly once execution",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.734399961307645,
+            3.746700007468462,
+            3.950500045903027,
+            3.766199923120439,
+            4.835700034163892
+          ]
+        },
+        {
+          "query": "Boreal SQLite deployment limits",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.02110000140965,
+            4.172799992375076,
+            4.386399989016354,
+            4.4145999709144235,
+            3.9004000136628747
+          ]
+        },
+        {
+          "query": "Cedar evidence record provenance",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 149,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.1584999999031425,
+            3.9926000172272325,
+            4.296200000680983,
+            3.779500024393201,
+            4.096100106835365
+          ]
+        },
+        {
+          "query": "Cedar semantic entailment verification",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 114,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.5396999921649694,
+            4.398199962452054,
+            3.91289999242872,
+            3.8013000739738345,
+            3.9640999166294932
+          ]
+        },
+        {
+          "query": "Cedar valid citation inference limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 162,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.98120004683733,
+            3.909099963493645,
+            3.9305000100284815,
+            4.359400016255677,
+            4.14249999448657
+          ]
+        },
+        {
+          "query": "Cedar comparative conclusions review",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 86,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.120200057514012,
+            3.828899934887886,
+            3.916100016795099,
+            3.7977000465616584,
+            4.141699988394976
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "neighbors",
+      "auto_context": true,
+      "full_span_recall": 1.0,
+      "mean_span_coverage": 1,
+      "mean_units": 144.25,
+      "p50_ms": 4.036250000353903,
+      "p95_ms": 5.288599990308285,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "Atlas retrieval budget constraint",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.8293999386951327,
+            3.6236000014469028,
+            3.670700010843575,
+            4.285000031813979,
+            4.207500023767352
+          ]
+        },
+        {
+          "query": "Atlas source quotations generated context",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 197,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.9576999843120575,
+            3.728899988345802,
+            4.906799993477762,
+            4.23590000718832,
+            4.014700069092214
+          ]
+        },
+        {
+          "query": "Atlas parser OCR limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 199,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.8475999608635902,
+            4.848500015214086,
+            4.081199993379414,
+            3.9215999422594905,
+            3.7748999893665314
+          ]
+        },
+        {
+          "query": "Atlas evaluation comparisons",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            5.010599968954921,
+            3.7489000242203474,
+            3.692799946293235,
+            3.6803000839427114,
+            5.314299953170121
+          ]
+        },
+        {
+          "query": "Boreal worker claims lease token",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 211,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.9120999863371253,
+            3.8744000485166907,
+            3.679599962197244,
+            4.5683999778702855,
+            3.744100104086101
+          ]
+        },
+        {
+          "query": "Boreal crash recovery unfinished work",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.63429996650666,
+            3.73370002489537,
+            4.691099980846047,
+            4.050399991683662,
+            3.8912000600248575
+          ]
+        },
+        {
+          "query": "Boreal exactly once execution",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.971399972215295,
+            4.398299963213503,
+            3.8846000097692013,
+            3.8992000045254827,
+            3.7921000039204955
+          ]
+        },
+        {
+          "query": "Boreal SQLite deployment limits",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.7444000374525785,
+            4.305699956603348,
+            4.067200003191829,
+            4.227700061164796,
+            4.412599955685437
+          ]
+        },
+        {
+          "query": "Cedar evidence record provenance",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 149,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.022100009024143,
+            3.9006000151857734,
+            4.295599996112287,
+            4.605900030583143,
+            4.015299957245588
+          ]
+        },
+        {
+          "query": "Cedar semantic entailment verification",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 114,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.958799992688,
+            4.4880000641569495,
+            4.29369998164475,
+            3.920499933883548,
+            4.46710002142936
+          ]
+        },
+        {
+          "query": "Cedar valid citation inference limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 162,
+          "source_spans_valid": true,
+          "latency_ms": [
+            5.288599990308285,
+            4.518599947914481,
+            3.845200059004128,
+            4.367099958471954,
+            3.6880000261589885
+          ]
+        },
+        {
+          "query": "Cedar comparative conclusions review",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 86,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.4929999858140945,
+            4.193600034341216,
+            6.350399926304817,
+            4.950599977746606,
+            4.185500089079142
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "rse",
+      "auto_context": true,
+      "full_span_recall": 1.0,
+      "mean_span_coverage": 1,
+      "mean_units": 114.08333333333333,
+      "p50_ms": 4.123999970033765,
+      "p95_ms": 5.002600024454296,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "Atlas retrieval budget constraint",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            5.260100006125867,
+            3.9516999386250973,
+            4.371299990452826,
+            4.556600004434586,
+            3.907899954356253
+          ]
+        },
+        {
+          "query": "Atlas source quotations generated context",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.852900001220405,
+            4.296800005249679,
+            4.065899993292987,
+            3.765100031159818,
+            3.817299962975085
+          ]
+        },
+        {
+          "query": "Atlas parser OCR limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 136,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.06969990581274,
+            4.000400076620281,
+            3.7443999899551272,
+            3.6778999492526054,
+            4.626500071026385
+          ]
+        },
+        {
+          "query": "Atlas evaluation comparisons",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.136099945753813,
+            3.6368999863043427,
+            3.7399999564513564,
+            4.594000056385994,
+            4.537599976174533
+          ]
+        },
+        {
+          "query": "Boreal worker claims lease token",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.895800095051527,
+            3.8226000033318996,
+            5.375100066885352,
+            4.332000040449202,
+            3.9834000635892153
+          ]
+        },
+        {
+          "query": "Boreal crash recovery unfinished work",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.861800000071526,
+            4.580099950544536,
+            3.923900076188147,
+            4.039099905639887,
+            4.435700015164912
+          ]
+        },
+        {
+          "query": "Boreal exactly once execution",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.255400039255619,
+            3.9206999354064465,
+            4.1452000150457025,
+            3.900800016708672,
+            4.111899994313717
+          ]
+        },
+        {
+          "query": "Boreal SQLite deployment limits",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.870600019581616,
+            4.709200002253056,
+            3.8834000006318092,
+            4.522899980656803,
+            4.2212000116705894
+          ]
+        },
+        {
+          "query": "Cedar evidence record provenance",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 86,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.484899924136698,
+            3.9566000923514366,
+            4.430899978615344,
+            3.8641999708488584,
+            4.465100006200373
+          ]
+        },
+        {
+          "query": "Cedar semantic entailment verification",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 114,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.844600054435432,
+            4.207299905829132,
+            4.46130009368062,
+            4.380099941045046,
+            3.781900042667985
+          ]
+        },
+        {
+          "query": "Cedar valid citation inference limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 86,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.252400016412139,
+            4.435700015164912,
+            3.9247999666258693,
+            3.5632000071927905,
+            4.8331000143662095
+          ]
+        },
+        {
+          "query": "Cedar comparative conclusions review",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 86,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.394200048409402,
+            3.7765000015497208,
+            4.159200005233288,
+            5.002600024454296,
+            3.906099940650165
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "rse",
+      "auto_context": false,
+      "full_span_recall": 1.0,
+      "mean_span_coverage": 1,
+      "mean_units": 93.66666666666667,
+      "p50_ms": 4.268850025255233,
+      "p95_ms": 5.136099993251264,
+      "budget_violations": 0,
+      "invalid_source_spans": 0,
+      "cases": [
+        {
+          "query": "Atlas retrieval budget constraint",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.8731000386178493,
+            3.982999944128096,
+            4.470800049602985,
+            3.833299968391657,
+            3.881199983879924
+          ]
+        },
+        {
+          "query": "Atlas source quotations generated context",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.1884999955073,
+            4.60179999936372,
+            3.7956000305712223,
+            3.8087000139057636,
+            4.103200044482946
+          ]
+        },
+        {
+          "query": "Atlas parser OCR limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 48,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.345400026068091,
+            3.7733999779447913,
+            3.8830999983474612,
+            4.107699962332845,
+            5.329600069671869
+          ]
+        },
+        {
+          "query": "Atlas evaluation comparisons",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 131,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.8123000413179398,
+            3.9265999803319573,
+            4.162200028076768,
+            4.265900002792478,
+            3.7487000226974487
+          ]
+        },
+        {
+          "query": "Boreal worker claims lease token",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 69,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.7878999719396234,
+            3.9901999989524484,
+            4.2718000477179885,
+            3.793200012296438,
+            3.776300000026822
+          ]
+        },
+        {
+          "query": "Boreal crash recovery unfinished work",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.070199909619987,
+            4.152600071392953,
+            3.690799931064248,
+            3.649699967354536,
+            3.96640005055815
+          ]
+        },
+        {
+          "query": "Boreal exactly once execution",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 48,
+          "source_spans_valid": true,
+          "latency_ms": [
+            3.704700036905706,
+            3.7440999876707792,
+            3.4199999645352364,
+            3.6460000555962324,
+            4.238799912855029
+          ]
+        },
+        {
+          "query": "Boreal SQLite deployment limits",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 117,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.8608999932184815,
+            4.5543999876827,
+            4.872199962846935,
+            4.791899933479726,
+            4.7917000483721495
+          ]
+        },
+        {
+          "query": "Cedar evidence record provenance",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 66,
+          "source_spans_valid": true,
+          "latency_ms": [
+            5.0626000156626105,
+            4.623100045137107,
+            4.873099969699979,
+            4.35890001244843,
+            4.808999947272241
+          ]
+        },
+        {
+          "query": "Cedar semantic entailment verification",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 94,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.709700006060302,
+            4.317800048738718,
+            5.010599968954921,
+            4.396499949507415,
+            4.83610003720969
+          ]
+        },
+        {
+          "query": "Cedar valid citation inference limitations",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 86,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.987000022083521,
+            4.713300033472478,
+            4.81219997163862,
+            4.862500005401671,
+            5.136099993251264
+          ]
+        },
+        {
+          "query": "Cedar comparative conclusions review",
+          "full_span_hit": true,
+          "gold_span_coverage": 1,
+          "units": 86,
+          "source_spans_valid": true,
+          "latency_ms": [
+            4.560200031846762,
+            5.123300012201071,
+            5.351200001314282,
+            4.445500089786947,
+            4.949499969370663
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Small manually selected retrieval regression, not an unbiased benchmark.",
+    "Budget units are not model tokenizer tokens.",
+    "No LLM answer quality or semantic entailment measured.",
+    "RSE is not guaranteed to beat simpler baselines."
+  ]
+}

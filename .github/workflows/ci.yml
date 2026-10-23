@@ -1,0 +1,26 @@
+name: offline-ci
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+          cache: pip
+      - run: python -m pip install -c constraints.txt -e '.[dev]'
+      - run: ruff check src tests scripts
+      - run: ruff format --check src tests scripts
+      - run: pytest -q --cov=cite_paper --cov-report=term-missing --cov-report=xml
+      - run: python -m cite_paper demo
+      - run: python -m cite_paper evaluate --output output/evaluation
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offline-results-py${{ matrix.python }}
+          path: |
+            output/
+            coverage.xml

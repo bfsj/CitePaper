@@ -1,0 +1,23 @@
+{
+  "label": "four-real-papers-manual-regression",
+  "documents": [
+    {"key": "rag", "arxiv_id": "2005.11401v4", "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", "file": "../.citepaper/pdfs/2005.11401v4.pdf", "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233"},
+    {"key": "selfrag", "arxiv_id": "2310.11511v1", "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection", "file": "../.citepaper/pdfs/2310.11511v1.pdf", "sha256": "d9eaa1398abac0df67a9d0933a5bf8b6d9d83d2e72da2a486073cd842dd52978"},
+    {"key": "hyde", "arxiv_id": "2212.10496v1", "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels", "file": "../.citepaper/pdfs/2212.10496v1.pdf", "sha256": "dc0ae3c5584ed146beee122e6a9ad9c48547dde048d53e9be8435d8f1d354531"},
+    {"key": "middle", "arxiv_id": "2307.03172v3", "title": "Lost in the Middle: How Language Models Use Long Contexts", "file": "../.citepaper/pdfs/2307.03172v3.pdf", "sha256": "653b29619eae2ae4b361d7bdcdc06db4bedcb1b0eabe31814036beca8c1af0b1"}
+  ],
+  "cases": [
+    {"document": "rag", "page": 1, "query": "RAG non parametric memory Wikipedia index retriever", "gold": "vector index of Wikipedia"},
+    {"document": "rag", "page": 3, "query": "RAG generator BART model parameter count", "gold": "with 400M parameters"},
+    {"document": "rag", "page": 4, "query": "RAG Wikipedia corpus chunks document count", "gold": "21M documents"},
+    {"document": "selfrag", "page": 1, "query": "Self RAG reflection tokens adaptive retrieval mechanism", "gold": "called reflection tokens"},
+    {"document": "selfrag", "page": 2, "query": "Self RAG offline critic training overhead", "gold": "reducing overhead"},
+    {"document": "selfrag", "page": 4, "query": "Self RAG inference when retrieval not required", "gold": "the model predicts the next output segment"},
+    {"document": "hyde", "page": 1, "query": "HyDE hypothetical document encoder Contriever", "gold": "Contriever) encodes the document"},
+    {"document": "hyde", "page": 1, "query": "HyDE generated document hallucination limitation", "gold": "may contain false details"},
+    {"document": "hyde", "page": 4, "query": "HyDE InstructGPT sampling temperature experiment setting", "gold": "temperature of 0.7"},
+    {"document": "middle", "page": 1, "query": "Lost in Middle performance relevant information location", "gold": "information in the middle of long contexts"},
+    {"document": "middle", "page": 2, "query": "Lost in Middle key value retrieval task input format", "gold": "JSON-formatted key-value"},
+    {"document": "middle", "page": 2, "query": "Lost in Middle document order experiment position", "gold": "beginning, middle or end of the context"}
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "topic": "Compare how RAG and Self-RAG decide when to retrieve evidence.",
+  "mode": "model-assisted",
+  "verification": {
+    "source_spans_valid": true,
+    "invalid_evidence": [],
+    "citation_links_valid": true,
+    "problems": [],
+    "semantic_entailment": "not_evaluated",
+    "needs_review": true
+  },
+  "usage": [
+    {
+      "model": "Qwen3-0.6B",
+      "usage": {
+        "prompt_tokens": 168,
+        "completion_tokens": 80,
+        "total_tokens": 248,
+        "elapsed_seconds": 9.955
+      },
+      "attempts": 1
+    },
+    {
+      "model": "Qwen3-0.6B",
+      "usage": {
+        "prompt_tokens": 1134,
+        "completion_tokens": 383,
+        "total_tokens": 1517,
+        "elapsed_seconds": 65.8
+      },
+      "attempts": 1
+    }
+  ],
+  "retrieval_units": 346,
+  "budget": 400,
+  "timings_ms": {
+    "plan": 10101.745,
+    "discover": 3.219,
+    "retrieve": 195.91,
+    "write": 65950.435,
+    "verify": 4.016,
+    "report": 0.239
+  },
+  "claim_count": 4,
+  "evidence_count": 4,
+  "note": "Real local Qwen CPU inference; connectivity and structure smoke, not answer quality.",
+  "history": [
+    {
+      "run_id": "a0e6f624e76743188e296f7fc8f91197",
+      "status": "succeeded",
+      "error": null,
+      "last_stage": "report"
+    },
+    {
+      "run_id": "5260b497cded4c05850bb6930c449dec",
+      "status": "failed",
+      "error": "ProviderError",
+      "last_stage": "retrieve"
+    },
+    {
+      "run_id": "588eac6cd5394372ab0dc78de85a478e",
+      "status": "failed",
+      "error": "ProviderError",
+      "last_stage": "retrieve"
+    },
+    {
+      "run_id": "2e5917278f044842967a2430ad35f468",
+      "status": "succeeded",
+      "error": null,
+      "last_stage": "report"
+    }
+  ]
+}

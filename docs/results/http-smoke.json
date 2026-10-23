@@ -1,0 +1,18 @@
+{
+  "transport": "real localhost HTTP",
+  "pdf_upload": 201,
+  "submission": 202,
+  "status": "succeeded",
+  "event_count": 9,
+  "sse_replay": true,
+  "review_audit": 201,
+  "report_bytes": 9364,
+  "verification": {
+    "source_spans_valid": true,
+    "invalid_evidence": [],
+    "citation_links_valid": true,
+    "problems": [],
+    "semantic_entailment": "not_evaluated",
+    "needs_review": false
+  }
+}
